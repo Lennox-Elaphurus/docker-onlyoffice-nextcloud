@@ -30,8 +30,8 @@ services:
     tty: true
     restart: always
     ports:
-      - 80:80
-      - 443:443
+      - 9980:80
+      - 9981:443
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - app_data:/var/www/html
